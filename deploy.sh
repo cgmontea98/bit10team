@@ -20,7 +20,7 @@ git checkout -B main
 git add -A
 git commit -m 'deploy'
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
+
 # git push -f git@github.com:cgmontea98/bit10team.git main:gh-pages
 
 cd -

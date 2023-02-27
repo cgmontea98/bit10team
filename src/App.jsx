@@ -1,12 +1,9 @@
-import "./App.css";
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <h1>CVJS Dev's</h1>
-      <h2>Consultoria</h2>
-    </div>
-  );
+    <><h1>CVJS Dev's</h1></>
+  )
 }
 
-export default App;
+export default App
