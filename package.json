@@ -1,13 +1,10 @@
 {
   "name": "bit10team",
   "private": true,
-  "homepage": "https://cgmontea98.github.io//bit10team",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
