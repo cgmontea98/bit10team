@@ -6,15 +6,11 @@ En éste proyecto en conjunto con el equipo queremos crear una SPA para aquellas
 de las bebidas fuera de lo común, con la posibilidad de crear sus propios cocktail's, con la cantidad de
 ingredientes que sean de su gusto; podrán basarse en combianciones pre-establecidas por "CVJS Dev's" utilizando:
 
-```
 [API](https://www.thecocktaildb.com/)
-```
 
 ### Dailys 📋
 
-```
 Pactamos horarios nocturnos, normalmente después de la clase, para concretar y resolver dudas que se generen sobre la marcha.
-```
 
 ## Tecnologías usadas 🛠️
 
@@ -24,68 +20,84 @@ Pactamos horarios nocturnos, normalmente después de la clase, para concretar y 
 - [React Icon](https://react-icons.github.io/react-icons/icons?name=ai)
 
 ### Estilos y Fuentes ⌨️
-Paleta de Colores
+
+#### Paleta de Colores
 Se compone de los siguientes colores:
 
 ```
-
 #FB2576
+```
+
+```
 #FFFF
+```
+
+```
 #3F0071
+```
+
+```
 #150050
+```
+
+```
 #000000
 ```
-![Logo](./img/image.png)
 
-Fuentes desde Google Fonts
+![Paleta](./img/image.png)
+
+#### Fuentes desde Google Fonts
+
 Se compone con las siguientes fuentes:
-```
-Signika Negative (TÍTULOS)
-Monserrat (DESCRIPCIONES)
-```
 
 ```
-Da un ejemplo
+Signika Negative (Títulos)
 ```
 
+![Fuente](./img/titulo.png)
+
 ```
-Da un ejemplo
+Montserrat (Descripciones)
 ```
+
+![Fuente](./img/descripcion.png)
 
 ## Wireframe de baja 🚀
 
-![Logo](./img/wireframe%20de%20baja%201.PNG)
-![Logo](./img/wireframe%20de%20baja%202.PNG)
+El Wireframe de baja se realizo en la página LucidSpark.
+
+#### Vista Home
+
+![Wireframe](./img/wireframe%20de%20baja%201.PNG)
+
+#### Vista Team
+
+![Wireframe](./img/wireframe%20de%20baja%202.PNG)
 
 ## Wireframe de alta
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+Se utilizo la paqueteria [NPM](https://www.npmjs.com/package/gh-pages) para hacer efectivo el despliegue en GitHub con el siguiente link:
+
+https://cgmontea98.github.io/bit10team/
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+- **Cristian Montealegre** - _Reponsable del repositorio y despliegue_ - [Portafolio](https://cgmontea98.github.io/bit07me/) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cgmontea98/)
 
-- **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal)
-  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+- **Vanessa Robles** - _Suplente_ - [Portafolio](https://vanessamrb.github.io/bit07me/) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vanessa-robles-silva/)
 
-- **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal)
-  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+- **Juliana Gil** - _Documentación_ - [Portafolio](https://julianagil.github.io/bit07me/) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/julianagilcortes/)
 
-- **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal)
-  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-
-- **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal)
-  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+- **Sergio Hernández** - _Wireframe de baja_ - [Portafolio](https://sergiohernan19.github.io/bit07me/) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sergiohernandezbarrios19/)
 
 ## Expresiones de Gratitud 🎁
 
 - Comenta a otros sobre este proyecto 📢
 - Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
 - Da las gracias públicamente 🤓.
-- etc.
-
----
+- Etc.
+- Muchas gracias a nuestro prof. Javier Andres Garzón. [Portafolio](https://github.com/javierandresgp)
 
 ❤️
