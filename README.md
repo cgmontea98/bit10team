@@ -34,14 +34,14 @@ Se compone de los siguientes colores:
 #3F0071
 #150050
 #000000
-
-![Logo](./img/image.png)```
+```
+![Logo](./img/image.png)
 
 Fuentes desde Google Fonts
 Se compone con las siguientes fuentes:
 ```
 Signika Negative (TÍTULOS)
-Monserrat (CANVA) (DESCRIPCIONES)
+Monserrat (DESCRIPCIONES)
 ```
 
 ```
