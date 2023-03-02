@@ -3,26 +3,27 @@ import Table from "react-bootstrap/Table";
 
 export const Api = () => {
   const [data, setData] = useState([]);
-  const [rows, setRows] = useState(null);
-  const [col, setCol] = useState(null);
+
+  async function getBeers() {
+    const res = await fetch(
+      "https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6"
+    );
+    res = await res.json();
+    setData(res);
+  }
 
   useEffect(() => {
-    const apiE = async () => {
-      try {
-        const traer = await fetch(
-          "https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6"
-        );
-        setData(await traer.json());
-      } catch (error) {
-        alert(error, "no sirve");
-      }
-    };
-    apiE();
+    getBeers();
   }, []);
 
-  
+  const handleClick = () => {
+    console.log(data);
+  };
+
   return (
     <div>
+      <h1>Bebidas</h1>
+      <button onClick={() => handleClick()}>click</button>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -30,7 +31,14 @@ export const Api = () => {
             <th>First Name</th>
           </tr>
         </thead>
-        <tbody>{rows}</tbody>
+        <tbody>
+          {data.map((dato) => (
+            <tr>
+              <th>{dato.id}</th>
+              <th>{dato.name}</th>
+            </tr>
+          ))}
+        </tbody>
       </Table>
     </div>
   );
