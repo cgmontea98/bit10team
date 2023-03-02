@@ -21,7 +21,7 @@ export const Api = () => {
   return (
     <div>
       <h1>Bebidas</h1>
-      <Table striped bordered hover>
+      <Table striped bordered hover className="text-center  align-middle">
         <thead>
           <tr>
             <th>#</th>
