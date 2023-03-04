@@ -1,16 +1,23 @@
 import { Api } from "./components/Api";
+import {Route, Routes, BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from "./components/Navbar";
+import Inicio from "./components/Inicio";
+import Team from "./components/Team";
 
 function App() {
   return (
     <div className="App">
-      <h1>CVJS Dev's</h1>
-      <p className="read-the-docs">
-        Consultoria
-      </p>
-      <Api/>
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Inicio/>}/>
+          <Route path="/Api" element={<Api/>}/>
+          <Route path="/Team" element={<Team/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
 
-export default App
+export default App;
