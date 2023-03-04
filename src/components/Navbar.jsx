@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../../img/logonavbar.png";
 import '../css/navbar.css';
+import {Carrito} from "./Carrito.jsx"
 
 export const Navbar = () => {
   return (
@@ -34,7 +35,8 @@ export const Navbar = () => {
         <button className="btn btn-dark" type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
         {/*Carrito de compras*/}
         <Link>
-        <button className="btn btn-dark" type="submit"><i className="fa-solid fa-cart-shopping text-white"></i></button>
+        <Carrito className="btn btn-dark fa-solid fa-cart-shopping text-white" type="submit"/> <i className="fa-solid fa-cart-shopping text-white"></i>
+        <button></button>
         </Link>
       </form>
     </div>
