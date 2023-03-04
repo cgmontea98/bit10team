@@ -25,7 +25,7 @@ export const Navbar = () => {
           <Link className="nav-link active text-white" aria-current="page" to="/Team" >Team</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active text-white" aria-current="page" to="https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6" target="_blank">API</Link>
+          <Link className="nav-link active text-white" aria-current="page" to="https://punkapi.com/documentation/v2" target="_blank">API</Link>
         </li>
       </ul>
       {/*Buscador*/}
