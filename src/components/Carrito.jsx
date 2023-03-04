@@ -14,7 +14,7 @@ export const Carrito = () => {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch
+        <i className="fa-solid fa-cart-shopping text-white"></i>
       </Button>
       <Offcanvas
         show={show}

@@ -8,6 +8,7 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { FaLinkedinIn } from "react-icons/fa";
+import "../css/inicio.css" 
 
 export const Pie = () => {
   return (
@@ -19,8 +20,8 @@ export const Pie = () => {
           className="mb-3"
           fill
         >
-          <Tab eventKey="home" title="Horarios" className="bg-warning">
-            <Table striped bordered hover className="text-center">
+          <Tab eventKey="home" title="Horarios" className="bg-dark">
+            <Table striped bordered hover className="text-center text-light">
               <thead>
                 <tr>
                   <th>Días</th>
