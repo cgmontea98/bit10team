@@ -18,6 +18,7 @@ function App() {
           <Route path="/Team" element={<Team/>}/>
         </Routes>
       </BrowserRouter>
+      <Pie/>
     </div>
   );
 }
