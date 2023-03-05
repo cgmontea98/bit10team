@@ -31,7 +31,7 @@ export const Navbar = () => {
       </ul>
         {/*Carrito de compras*/}
         <Link>
-        <Carrito className="btn btn-dark fa-solid fa-cart-shopping text-white" type="submit"/> <i className="fa-solid fa-cart-shopping text-white"></i>
+        <Carrito className="btn btn-dark fa-solid fa-cart-shopping text-white" type="submit"/>
         <button></button>
         </Link>
     </div>
