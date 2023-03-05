@@ -29,16 +29,11 @@ export const Navbar = () => {
           <Link className="nav-link active text-white" aria-current="page" to="https://punkapi.com/documentation/v2" target="_blank">API</Link>
         </li>
       </ul>
-      {/*Buscador*/}
-      <form className="d-flex" role="search">
-        <input className="form-control form-control-sm" type="search" placeholder="Busca tu cerveza" aria-label="Search"></input>
-        <button className="btn btn-dark" type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
         {/*Carrito de compras*/}
         <Link>
         <Carrito className="btn btn-dark fa-solid fa-cart-shopping text-white" type="submit"/> <i className="fa-solid fa-cart-shopping text-white"></i>
         <button></button>
         </Link>
-      </form>
     </div>
   </div>
 </nav>
