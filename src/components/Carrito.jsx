@@ -18,13 +18,14 @@ export const Carrito = () => {
       </Button>
       <Offcanvas
         show={show}
-       
         placement="end"
         className="d-flex align-items-center text-center bg-dark"
       >
         <Offcanvas.Header>
-          <Offcanvas.Title className="fw-bolder fs-2 text-info">Orden...</Offcanvas.Title>
-          <CloseButton  onClick={handleClose} className="mx-5 bg-danger" />
+          <Offcanvas.Title className="fw-bolder fs-2 text-info">
+            Orden...
+          </Offcanvas.Title>
+          <CloseButton onClick={handleClose} className="mx-5 bg-danger" />
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Card style={{ width: "20rem" }}>

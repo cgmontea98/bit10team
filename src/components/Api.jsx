@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Carrusel } from "./Carrusel.jsx";
-import {Busqueda} from "./Busqueda.jsx"
+import { Busqueda } from "./Busqueda.jsx";
 
 export const Api = () => {
   const [data, setData] = useState([]);
@@ -14,12 +14,12 @@ export const Api = () => {
   useEffect(() => {
     getBeers();
   }, []);
-  console.log(data)
+  console.log(data);
   return (
     <div>
       <h1>Bebidas</h1>
-      <Busqueda data={data}/>
-      <Carrusel data={data}/>
+      <Busqueda data={data} />
+      <Carrusel data={data} />
     </div>
   );
 };

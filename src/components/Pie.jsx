@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/inicio.css";
 import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -8,7 +9,6 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { FaLinkedinIn } from "react-icons/fa";
-import "../css/inicio.css" 
 
 export const Pie = () => {
   return (
