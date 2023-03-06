@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/inicio.css";
 import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -19,8 +20,8 @@ export const Pie = () => {
           className="mb-3"
           fill
         >
-          <Tab eventKey="home" title="Horarios" className="bg-warning">
-            <Table striped bordered hover className="text-center">
+          <Tab eventKey="home" title="Horarios" className="bg-dark">
+            <Table striped bordered hover className="text-center text-light">
               <thead>
                 <tr>
                   <th>Días</th>

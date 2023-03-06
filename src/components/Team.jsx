@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Forum() {
-  return (
-    <div>Team</div>
-  )
+  return <div>Team</div>;
 }
 
-export default Forum
+export default Forum;
