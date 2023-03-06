@@ -33,8 +33,7 @@ export const Api = () => {
           {data.map((data) => (
             <tr key={uuidv4()}>
               <th>{data.id}</th>
-              <th>{data.name}</th>
-              <th>
+              <th>{data.name}</th>git
                 <img src={data.image_url} style={{ width: "5rem" }}></img>{" "}
               </th>
             </tr>
