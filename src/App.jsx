@@ -3,7 +3,7 @@ import { Api } from "./components/Api";
 import {Route, Routes, BrowserRouter} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Inicio from "./components/Inicio";
-import Team from "./components/Team";
+import {Team} from "./components/Team";
 import { Carrito } from "./components/Carrito";
 import { Pie } from "./components/Pie";
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Carrusel } from "./Carrusel.jsx";
+import { Cards } from "./Cards.jsx";
 import { Busqueda } from "./Busqueda.jsx";
 
 export const Api = () => {
@@ -19,7 +19,7 @@ export const Api = () => {
     <div>
       <h1>Bebidas</h1>
       <Busqueda data={data} />
-      <Carrusel data={data} />
+      <Cards data={data} />
     </div>
   );
 };
