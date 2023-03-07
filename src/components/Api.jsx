@@ -14,7 +14,6 @@ export const Api = () => {
   useEffect(() => {
     getBeers();
   }, []);
-  console.log(data);
   return (
     <div>
       <h1>Bebidas</h1>
