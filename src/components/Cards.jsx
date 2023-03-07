@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Agregar } from "./Agregar";
+import { Busqueda } from "./Busqueda";
+
 export const Cards = ({ data }) => {
   return (
     <>
+      <Busqueda data={data}/>
       {data.map((dato) => (
         <Card style={{ width: "18rem" }} key={dato.id}>
           <Card.Img variant="top" src={dato.image_url} />
@@ -18,15 +20,3 @@ export const Cards = ({ data }) => {
     </>
   );
 };
-
-/*<Card.Img variant="top" src={dato.image_url}
-          style={{ maxHeight: "250px", maxWidth: "100px" }}/>
-          <Card.Body>
-        <Card.Title>{dato.name}</Card.Title>
-        <Card.Text>{dato.id}
-        </Card.Text>
-        <Card.Text>
-        {dato.description}
-        </Card.Text>
-        
-      </Card.Body>*/

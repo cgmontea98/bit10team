@@ -10,7 +10,7 @@ import { Pie } from "./components/Pie";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
       <Navbar/>
         <Routes>
           <Route path="/" element={<Inicio/>}/>
