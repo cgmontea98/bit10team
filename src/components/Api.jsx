@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Cards } from "./Cards.jsx";
-import { Busqueda } from "./Busqueda.jsx";
+
 
 export const Api = () => {
   const [data, setData] = useState([]);
@@ -18,7 +18,6 @@ export const Api = () => {
   return (
     <div>
       <h1>Bebidas</h1>
-      <Busqueda data={data} />
       <Cards data={data} />
     </div>
   );
