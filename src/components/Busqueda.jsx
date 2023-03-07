@@ -1,20 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { SearchBar } from "./SearchBar";
+
 export const Busqueda = ({ data }) => {
-  const [search, setSearch] = useState("");
-  const updateInput = (e) => {
-    setSearch(e.target.value);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filtro, setFiltro] = useState([]);
+
+  const uno = () => {
+    if (filtro.length > 0) {
+      return filtro.map((dato) => {
+        return <span key={dato.id}>{dato.name}</span>;
+      });
+    } else {
+      return <span>Error</span>;
+    }
   };
-  const results = !search
-    ? data
-    : data.filter((dato) =>
-        dato.name.toLowerCase().includes(search.toLocaleLowerCase())
-      );
+
+  useEffect(() => {
+    const resultado = data.filter((dato) => {
+      return dato.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+    setFiltro(resultado);
+  }, [searchTerm, data]);
+
   return (
-    <input
-      type="text"
-      value={search}
-      onInput={updateInput}
-      placeholder="Buscar tu cerveza favorita"
-    />
+    <div>
+      <SearchBar onSearch={setSearchTerm} />
+      {uno()}
+    </div>
   );
 };
