@@ -1,10 +1,10 @@
 ![Logo](./img/img_Readme/logoCVJS.png)
 
-# Cocktail's CVJS Dev's
+# Beer Party CVJS Dev's
 
-En éste proyecto en conjunto con el equipo queremos crear una SPA para aquellas personas que sean amantes de las bebidas fuera de lo común, con la posibilidad de crear sus propios cocktail's, con la cantidad de ingredientes que sean de su gusto; podrán basarse en combianciones pre-establecidas por "CVJS Dev's" utilizando:
+En éste proyecto en conjunto con el equipo queremos crear una SPA para aquellas personas que sean amantes de las bebidas fuera de lo común, con la posibilidad de seleccionar sus cervezas favoritas; podrán basarse en cervezas pre-establecidas por "CVJS Dev's" utilizando:
 
-[API](https://www.thecocktaildb.com/)
+[API](https://punkapi.com/documentation/v2)
 
 ## Dailys 📋
 
@@ -55,13 +55,13 @@ Se compone con las siguientes fuentes:
 Signika Negative (Títulos)
 ```
 
-![Fuente](./img/img_Readme/titulo.png)
+![Fuente](./img/img_Readme/signika.png)
 
 ```
 Montserrat (Descripciones)
 ```
 
-![Fuente](./img/img_Readme/descripcion.png)
+![Fuente](./img/img_Readme/monserrat.png)
 
 ---
 
@@ -71,7 +71,7 @@ El Wireframe de baja se realizo en la página LucidSpark.
 
 ### Vista Home
 
-![Wireframe](./img/img_Readme/wireframe%20de%20baja%201.PNG)
+![Wireframe](./img/img_Readme/lucid%20inicio.png)
 
 ### Vista Team
 
@@ -83,19 +83,19 @@ El Wireframe de baja se realizo en la página [Canva](https://www.canva.com/desi
 
 ### Vista 1: Home
 
-![Wireframe_Home](./img/img_Readme/Sitio%20Web%20landing%20page%20dise%C3%B1o%20delicado%20minimalista%20para%20joyas%20hechas%20a%20mano%20dorado%20y%20beis_pages-to-jpg-0001.jpg)
+![Wireframe_Home](./img/img_Readme/imagen%20inicio.png)
 
 ### Vista 2: Productos
 
-![Wireframe_Productos](./img/img_Readme/Sitio%20Web%20landing%20page%20dise%C3%B1o%20delicado%20minimalista%20para%20joyas%20hechas%20a%20mano%20dorado%20y%20beis_pages-to-jpg-0002.jpg)
+![Wireframe_Productos](./img/img_Readme/imagen%20cat%C3%A1logo.png)
 
 ### Vista 3: Diseño de footer
 
-![Wireframe_footer](./img/img_Readme/Sitio%20Web%20landing%20page%20dise%C3%B1o%20delicado%20minimalista%20para%20joyas%20hechas%20a%20mano%20dorado%20y%20beis_pages-to-jpg-0003.jpg)
+![Wireframe_footer](./img/img_Readme/imagen%20cat%C3%A1logo%202.png)
 
 ### Vista 4: Detalle de producto
 
-![Wireframe_Detalle](./img/img_Readme/Sitio%20Web%20landing%20page%20dise%C3%B1o%20delicado%20minimalista%20para%20joyas%20hechas%20a%20mano%20dorado%20y%20beis_pages-to-jpg-0004.jpg)
+![Wireframe_Detalle](./img/img_Readme/imagen%20artesano.png)
 
 ### Vista 5: Team!
 
