@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
-import { Agregar } from "./Agregar";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
-
+import { Agregar } from "./Agregar";
 import { Carrito } from "./Carrito.jsx";
 
 export const Cards = ({ data }) => {
