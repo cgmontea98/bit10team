@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Card from "react-bootstrap/Card";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 export const Carrito = ({ showCart, cartItems, onHide }) => {
   return (
@@ -16,34 +17,18 @@ export const Carrito = ({ showCart, cartItems, onHide }) => {
         <Offcanvas.Body>
           {cartItems &&
             cartItems.map((item) => (
-              <Card
-                className="card text-bg-light mb-1 m-2"
-                style={{ width: "350px", textAlign: "center" }}
-                key={item.id}
-              >
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                  <Card.Img
-                    className="text-center py-3"
-                    variant="top"
-                    style={{ width: "100px" }}
-                    src={item.image_url}
-                  />
-                </div>
+              <Card style={{ width: "18rem" }} key={item.id}>
+                <Card.Img variant="top" src={item.image_url} />
                 <Card.Body>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    {item.name}
-                  </Card.Title>
-                  <Card.Text
-                    style={{
-                      justifyContent: "center",
-                      width: "310px",
-                      marginLeft: "-25px",
-                      margin: "5px",
-                    }}
-                  >
-                    {item.description}
-                  </Card.Text>
-                  <Agregar data={dato} onClick={() => agregarAlCarrito(dato)} />
+                  <Card.Title>{item.name}</Card.Title>
+                </Card.Body>
+
+                <Card.Body>
+                  <ButtonGroup aria-label="Basic example">
+                    <Button variant="warning m-2">Left</Button>
+                    <Button variant="success m-2">Middle</Button>
+                    <Button variant="danger m-2">Right</Button>
+                  </ButtonGroup>
                 </Card.Body>
               </Card>
             ))}
@@ -52,3 +37,4 @@ export const Carrito = ({ showCart, cartItems, onHide }) => {
     </>
   );
 };
+
