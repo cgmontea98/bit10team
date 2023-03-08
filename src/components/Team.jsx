@@ -29,7 +29,6 @@ export const Team = () => {
             </Card.Body>
           </Card>
         </Col>
-
         <Col>
           <Card style={{ width: "18rem" }}>
             <Card.Img
@@ -49,7 +48,6 @@ export const Team = () => {
             </Card.Body>
           </Card>
         </Col>
-
         <Col>
           <Card style={{ width: "18rem" }}>
             <Card.Img
@@ -69,7 +67,6 @@ export const Team = () => {
             </Card.Body>
           </Card>
         </Col>
-
         <Col>
           <Card style={{ width: "18rem" }}>
             <Card.Img

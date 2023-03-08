@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/navbar.css";
-import { Link } from "react-router-dom";
 import Logo from "../../img/logonavbar.png";
+import { Link } from "react-router-dom";
 import { Carrito } from "./Carrito.jsx";
 
 export const Navbar = () => {

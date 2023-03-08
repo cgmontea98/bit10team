@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Cards } from "./Cards.jsx";
 
-
 export const Api = () => {
   const [data, setData] = useState([]);
   async function getBeers() {
