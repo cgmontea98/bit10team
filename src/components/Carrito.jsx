@@ -1,56 +1,36 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import CloseButton from "react-bootstrap/CloseButton";
 import Card from "react-bootstrap/Card";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-export const Carrito = () => {
-  const [show, setShow] = useState(false);
-
-  const handleShow = () => setShow(true);
-  const handleClose = () => setShow(false);
-
+export const Carrito = ({ showCart, cartItems, onHide }) => {
   return (
     <>
-      <Button variant="dark" onClick={handleShow}>
+      <Button variant="dark" onClick={onHide}>
         <i className="fa-solid fa-cart-shopping text-white"></i>
       </Button>
-      <Offcanvas
-        show={show}
-        placement="end"
-        className="d-flex align-items-center text-center bg-dark"
-      >
-        <Offcanvas.Header>
-          <Offcanvas.Title className="fw-bolder fs-2 text-info">
-            Orden...
-          </Offcanvas.Title>
-          <CloseButton onClick={handleClose} className="mx-5 bg-danger" />
+      <Offcanvas show={showCart} onHide={onHide} placement="end">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Productos agregados</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Card style={{ width: "20rem" }}>
-            <Card.Img
-              variant="top"
-              style={{ width: "18rem" }}
-              className="m-2"
-              src="https://dummyimage.com/288x288/000/fff"
-            />
-            <Card.Body>
-              <Card.Title>Dato.Name</Card.Title>
-              <Card.Text>$$$</Card.Text>
-              <ButtonGroup aria-label="Basic example">
-                <Button variant="warning" className="m-1">
-                  Agregar
-                </Button>
-                <Button variant="danger" className="m-1">
-                  Eliminar
-                </Button>
-                <Button variant="success" className="m-1">
-                  Confirmar
-                </Button>
-              </ButtonGroup>
-            </Card.Body>
-          </Card>
+          {cartItems &&
+            cartItems.map((item) => (
+              <Card style={{ width: "18rem" }} key={item.id}>
+                <Card.Img variant="top" src={item.image_url} />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                </Card.Body>
+                <Card.Body>
+                  <ButtonGroup aria-label="Basic example">
+                    <Button variant="warning m-2">Left</Button>
+                    <Button variant="success m-2">Middle</Button>
+                    <Button variant="danger m-2">Right</Button>
+                  </ButtonGroup>
+                </Card.Body>
+              </Card>
+            ))}
         </Offcanvas.Body>
       </Offcanvas>
     </>

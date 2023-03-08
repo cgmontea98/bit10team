@@ -3,23 +3,28 @@ import Card from "react-bootstrap/Card";
 import { Agregar } from "./Agregar";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 
+import { Carrito } from "./Carrito.jsx";
+
 export const Cards = ({ data }) => {
-  //PARA LA BARRA DE BUSQUEDA
   const [searchTerm, setSearchTerm] = useState("");
-
-  //PARA GUARDAR DESPUÉS DE LA BUSQUEDA EL UNICO OBJETO
   const [filtro, setFiltro] = useState([]);
+  const [showCart, setShowCart] = useState(false);
+  const [carrito, setCarrito] = useState([]);
 
-  // PARA CONTROLAR EL CAMBIO EN EL CICLO DE VIDA AL INGRESAR COSAS EN EL INPUT
   useEffect(() => {
-    //SE GUARDA EN UNA VARIABLE EL FILTRO Y SE RETORNA LA BUSQUEDA UNICAMENTE CON LO QUE SE INCLUYA LA BUSQUEDA
     const resultado = data.filter((dato) => {
       return dato.name.toLowerCase().includes(searchTerm.toLowerCase());
     });
-    // SE RESETEA FILTRO PARA GUARDAR ESE BUSQUEDA ANTERIOR
     setFiltro(resultado);
-    // EN DEPENDENCIAS SE BUSCA QUE ESTE PENDIENTE DE LOS CAMBIOS TAMBIEN FUNCIONA SIN DATA PERO HAY UN ERROR EN AMARILLO
   }, [searchTerm, data]);
+
+  const agregarAlCarrito = (item) => {
+    setCarrito([...carrito, item]);
+  };
+
+  const handleHideCart = () => {
+    setShowCart(false);
+  };
 
   return (
     <>
@@ -32,7 +37,10 @@ export const Cards = ({ data }) => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </InputGroup>
-      {/* SE HACE UNA COMPARACION DONDE LA BUSQUEDA DEL TERMINO ES VACIO; ENTONCES VA HA COLOCAR TODO EN LA VISUAL */}
+      <Button variant="dark" onClick={() => setShowCart(true)}>
+        <i className="fa-solid fa-cart-shopping text-white"></i> ({carrito.length})
+      </Button>
+      <Carrito showCart={showCart} onHide={() => setShowCart(false)} cartItems={carrito} />
       {searchTerm === "" ? (
         data.map((dato) => (
           <Card style={{ width: "18rem" }} key={dato.id}>
@@ -40,19 +48,18 @@ export const Cards = ({ data }) => {
             <Card.Body>
               <Card.Title>{dato.name}</Card.Title>
               <Card.Text>{dato.description}</Card.Text>
-              <Agregar />
+              <Agregar data={dato} onClick={() => agregarAlCarrito(dato)} />
             </Card.Body>
           </Card>
         ))
-      ) : /* Y AQUÍ SE LE PREGUNTA POR LO QUE HAY EN LA BARRA DE BUSQUEDA Y SI EL OBJETO ES MAYOR A 0 VA A RENDERIZAR UNICAMENTE LO QUE HAY DENTRO DE FILTRO */
-      filtro && filtro.length > 0 ? (
+      ) : filtro && filtro.length > 0 ? (
         filtro.map((dato) => (
           <Card style={{ width: "18rem" }} key={dato.id}>
             <Card.Img variant="top" src={dato.image_url} />
             <Card.Body>
               <Card.Title>{dato.name}</Card.Title>
               <Card.Text>{dato.description}</Card.Text>
-              <Agregar />
+              <Agregar data={dato} onClick={() => agregarAlCarrito(dato)} />
             </Card.Body>
           </Card>
         ))

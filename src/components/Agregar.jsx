@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-export const Agregar = () => {
+export const Agregar = ({onClick}) => {
+  
   return (
     <div>
-      <Button variant="primary">Go somewhere</Button>
+      <button onClick={onClick}>Agregar</button>
     </div>
   );
 };
