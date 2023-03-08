@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
-import { Agregar } from "./Agregar";
-import { InputGroup, FormControl, Button } from "react-bootstrap";
 import "../css/card.css";
+import Card from "react-bootstrap/Card";
+import { InputGroup, FormControl, Button } from "react-bootstrap";
+import { Agregar } from "./Agregar";
+import { Carrito } from "./Carrito.jsx";
 
 export const Cards = ({ data }) => {
-  //PARA LA BARRA DE BUSQUEDA
   const [searchTerm, setSearchTerm] = useState("");
-
-  //PARA GUARDAR DESPUÉS DE LA BUSQUEDA EL UNICO OBJETO
   const [filtro, setFiltro] = useState([]);
-
-  // PARA CONTROLAR EL CAMBIO EN EL CICLO DE VIDA AL INGRESAR COSAS EN EL INPUT
+  const [showCart, setShowCart] = useState(false);
+  const [carrito, setCarrito] = useState([]);
   useEffect(() => {
-    //SE GUARDA EN UNA VARIABLE EL FILTRO Y SE RETORNA LA BUSQUEDA UNICAMENTE CON LO QUE SE INCLUYA LA BUSQUEDA
     const resultado = data.filter((dato) => {
       return dato.name.toLowerCase().includes(searchTerm.toLowerCase());
     });
-    // SE RESETEA FILTRO PARA GUARDAR ESE BUSQUEDA ANTERIOR
     setFiltro(resultado);
-    // EN DEPENDENCIAS SE BUSCA QUE ESTE PENDIENTE DE LOS CAMBIOS TAMBIEN FUNCIONA SIN DATA PERO HAY UN ERROR EN AMARILLO
   }, [searchTerm, data]);
-
+  const agregarAlCarrito = (item) => {
+    setCarrito([...carrito, item]);
+  };
+  const handleHideCart = () => {
+    setShowCart(false);
+  };
   return (
     <div className="container">
       <div className="row">
@@ -37,83 +37,101 @@ export const Cards = ({ data }) => {
           </InputGroup>
         </div>
       </div>
-      {/* SE HACE UNA COMPARACION DONDE LA BUSQUEDA DEL TERMINO ES VACIO; ENTONCES VA HA COLOCAR TODO EN LA VISUAL */}
-
-      <div className="card-container">
-        {searchTerm === "" ? (
-          data.map((dato) => (
-            <Card
-              className="card text-bg-light mb-1 m-2 p-2"
-              style={{ width: "400px" }}
-              key={dato.id}
-            >
-              <div
-                className=""
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <Card.Img
-                  className="text-center"
-                  variant="top"
-                  style={{ width: "100px" }}
-                  src={dato.image_url}
-                />
-              </div>
-              <Card.Body>
-                <Card.Title style={{ textAlign: "center" }}>
-                  {dato.name}
-                </Card.Title>
-                <Card.Text
-                  style={{
-                    justifyContent: "center",
-                    width: "400px",
-                    marginLeft: "-25px",
-                  }}
+      <div className="row">
+        <div className="col">
+          <Button variant="dark" onClick={() => setShowCart(true)}>
+            <i className="fa-solid fa-cart-shopping text-white"></i> (
+            {carrito.length})
+          </Button>
+          <Carrito
+            showCart={showCart}
+            onHide={() => setShowCart(false)}
+            cartItems={carrito}
+          />
+        </div>
+      </div>
+      <div className="row ">
+        <div className="col">
+          <div className="card-container py-5">
+            {searchTerm === "" ? (
+              data.map((dato) => (
+                <Card
+                  className="card text-bg-light mb-1 m-2"
+                  style={{ width: "350px", textAlign: "center" }}
+                  key={dato.id}
                 >
-                  {dato.description}
-                </Card.Text>
-                <Agregar />
-              </Card.Body>
-            </Card>
-          ))
-        ) : /* Y AQUÍ SE LE PREGUNTA POR LO QUE HAY EN LA BARRA DE BUSQUEDA Y SI EL OBJETO ES MAYOR A 0 VA A RENDERIZAR UNICAMENTE LO QUE HAY DENTRO DE FILTRO */
-        filtro && filtro.length > 0 ? (
-          filtro.map((dato) => (
-            <Card
-              className="card text-bg-light mb-5 m-2 p-2"
-              style={{ width: "400px" }}
-              key={dato.id}
-            >
-              <div
-                className=""
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <Card.Img
-                  className="text-center"
-                  variant="top"
-                  style={{ width: "100px" }}
-                  src={dato.image_url}
-                />
-              </div>
-              <Card.Body>
-                <Card.Title style={{ textAlign: "center" }}>
-                  {dato.name}
-                </Card.Title>
-                <Card.Text
-                  style={{
-                    justifyContent: "center",
-                    width: "400px",
-                    marginLeft: "-25px",
-                  }}
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <Card.Img
+                      className="text-center py-3"
+                      variant="top"
+                      style={{ width: "100px" }}
+                      src={dato.image_url}
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title style={{ textAlign: "center" }}>
+                      {dato.name}
+                    </Card.Title>
+                    <Card.Text
+                      style={{
+                        justifyContent: "center",
+                        width: "310px",
+                        marginLeft: "-25px",
+                        margin: "5px",
+                      }}
+                    >
+                      {dato.description}
+                    </Card.Text>
+                    <Agregar
+                      data={dato}
+                      onClick={() => agregarAlCarrito(dato)}
+                    />
+                  </Card.Body>
+                </Card>
+              ))
+            ) : filtro && filtro.length > 0 ? (
+              filtro.map((dato) => (
+                <Card
+                  className="card text-bg-light mb-1 m-2 p-2"
+                  style={{ width: "400px" }}
+                  key={dato.id}
                 >
-                  {dato.description}
-                </Card.Text>
-                <Agregar />
-              </Card.Body>
-            </Card>
-          ))
-        ) : (
-          <span>No se encontraron resultados</span>
-        )}
+                  <div
+                    className=""
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <Card.Img
+                      className="text-center"
+                      variant="top"
+                      style={{ width: "100px" }}
+                      src={dato.image_url}
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title style={{ textAlign: "center" }}>
+                      {dato.name}
+                    </Card.Title>
+                    <Card.Text
+                      style={{
+                        justifyContent: "center",
+                        width: "400px",
+                        marginLeft: "-25px",
+                      }}
+                    >
+                      {dato.description}
+                    </Card.Text>
+                    <Agregar
+                      data={dato}
+                      onClick={() => agregarAlCarrito(dato)}
+                    />
+                  </Card.Body>
+                </Card>
+              ))
+            ) : (
+              <span>No se encontraron resultados</span>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

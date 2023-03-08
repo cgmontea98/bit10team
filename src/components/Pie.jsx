@@ -20,7 +20,11 @@ export const Pie = () => {
           className="mb-3 custom-tab"
           fill
         >
-          <Tab eventKey="home" title="Horarios" className="text-center custom-tab">
+          <Tab
+            eventKey="home"
+            title="Horarios"
+            className="text-center custom-tab"
+          >
             <Table striped bordered hover className="text-center table-dark">
               <thead>
                 <tr>
@@ -121,8 +125,7 @@ export const Pie = () => {
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"
-              >
-              </Form.Group>
+              ></Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"

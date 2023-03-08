@@ -15,8 +15,8 @@ export const Api = () => {
   }, []);
   return (
     <div>
-            {/* Marquesin con promo*/}
-            <div className="container-fluid bg-light border-1">
+      {/* Marquesin con promo*/}
+      <div className="container-fluid bg-light border-1">
         <marquee behavior="scroll" dirección="scrollamount" className="promo">
           <span className="material-symbols-outlined">
             <i className="fa-solid fa-cart-shopping text-back"></i> Por compras

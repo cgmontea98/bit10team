@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <Link
                   className="nav-link active text-white"
                   aria-current="page"
-                  to="/Api"
+                  to="/Catalogo"
                 >
                   Catálogo
                 </Link>

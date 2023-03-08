@@ -1,27 +1,27 @@
-  @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-h1{
-    font-family: 'Signika Negative', sans-serif;
-    color: #150050;
-    padding: 30px;
+h1 {
+  font-family: "Signika Negative", sans-serif;
+  color: #150050;
+  padding: 30px;
 }
 
-p{
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-    margin-right: 100px;
-    margin-left: 100px;
-    text-align: justify
+p {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: justify;
 }
 
-span{
-    color:#FB2576;
-  }
+span {
+  color: #fb2576;
+}
 
-.material-symbols-outlined{
-    color: black;
+.material-symbols-outlined {
+  color: black;
 }
 img {
-    width:100%;
+  width: 100%;
 }
