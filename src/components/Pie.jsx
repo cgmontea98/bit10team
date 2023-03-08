@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/inicio.css";
+import "../css/pie.css";
 import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -17,11 +17,15 @@ export const Pie = () => {
         <Tabs
           defaultActiveKey="profile"
           id="fill-tab-example"
-          className="mb-3"
+          className="mb-3 custom-tab"
           fill
         >
-          <Tab eventKey="home" title="Horarios" className="bg-dark">
-            <Table striped bordered hover className="text-center text-light">
+          <Tab
+            eventKey="home"
+            title="Horarios"
+            className="text-center custom-tab"
+          >
+            <Table striped bordered hover className="text-center table-dark">
               <thead>
                 <tr>
                   <th>Días</th>
@@ -59,6 +63,7 @@ export const Pie = () => {
               title={<FaLinkedinIn />}
               id="bg-vertical-dropdown-1"
               className="p-2"
+              variant="dark"
             >
               <Dropdown.Item eventKey="1">
                 <a
@@ -66,7 +71,7 @@ export const Pie = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Cristian
+                  Cristian Montealegre
                 </a>
               </Dropdown.Item>
               <Dropdown.Item eventKey="2">
@@ -75,7 +80,7 @@ export const Pie = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Vanessa
+                  Vanessa Robles
                 </a>
               </Dropdown.Item>
               <Dropdown.Item eventKey="3">
@@ -84,7 +89,7 @@ export const Pie = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Juliana
+                  Juliana Gil
                 </a>
               </Dropdown.Item>
               <Dropdown.Item eventKey="4">
@@ -93,7 +98,7 @@ export const Pie = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Sergio
+                  Sergio Hernandez
                 </a>
               </Dropdown.Item>
             </DropdownButton>
@@ -101,9 +106,9 @@ export const Pie = () => {
           <Tab
             eventKey="longer-tab"
             title="Comentarios"
-            className="bg-warning p-2"
+            className="bg-dark p-2"
           >
-            <Form>
+            <Form className="bg-dark text-white">
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
@@ -120,19 +125,11 @@ export const Pie = () => {
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"
-              >
-                <Form.Select aria-label="Default select example">
-                  <option>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </Form.Select>
-              </Form.Group>
+              ></Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"
               >
-                <Form.Label>Example textarea</Form.Label>
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
             </Form>

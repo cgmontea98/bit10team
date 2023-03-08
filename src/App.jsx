@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Api } from "./components/Api";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Inicio from "./components/Inicio";
+import { Api } from "./components/Api";
 import { Team } from "./components/Team";
 import { Pie } from "./components/Pie";
 
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/Api" element={<Api />} />
+          <Route path="/Catalogo" element={<Api />} />
           <Route path="/Team" element={<Team />} />
         </Routes>
       </BrowserRouter>

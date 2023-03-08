@@ -22,6 +22,7 @@ export const Carrito = ({ showCart, cartItems, onHide }) => {
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
                 </Card.Body>
+
                 <Card.Body>
                   <ButtonGroup aria-label="Basic example">
                     <Button variant="warning m-2">Left</Button>
@@ -36,3 +37,4 @@ export const Carrito = ({ showCart, cartItems, onHide }) => {
     </>
   );
 };
+

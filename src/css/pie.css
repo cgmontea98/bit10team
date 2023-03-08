@@ -1,0 +1,9 @@
+.custom-tab .nav-link {
+  color: #fb2576;
+}
+.custom-tab .nav-link.active {
+  background-color: #fb2576;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}

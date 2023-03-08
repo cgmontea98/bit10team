@@ -20,12 +20,16 @@ function Inicio() {
       {/* Titulo y descripcion*/}
       <h1>Cervezas</h1>
       <p>
-        ¿Busca degustar sabores nuevos para su paladar? En
+        ¿Busca degustar sabores nuevos para su paladar? En{" "}
         <span>Beers CVJS Dev's</span> aprenderá de la mano de expertos a
-        degustar las mejores <span>cervezas</span> para toda ocasión. Y para
-        tener toda la experiencia en sus manos, usted puede encontrar todos los
-        ingredientes y utensilios básicos para seguir las recetas de cervezas y
-        llevar a cabo su elaboración.
+        degustar las mejores <span>cervezas</span> para toda ocasión.
+      </p>
+      <h1>Historia</h1>
+      <p>
+        <span>Beers CVJS Dev's</span> nace de la unión de 4 estudiantes de
+        programación con el sueño de crear una página ventas funcional para un
+        público joven que esté dispuesto a conocer y desgudtar de una buena
+        cerveza.
       </p>
     </div>
   );
