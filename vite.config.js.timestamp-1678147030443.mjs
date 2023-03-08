@@ -3,7 +3,7 @@ import { defineConfig } from "file:///C:/Users/compu/github/bit10team/node_modul
 import react from "file:///C:/Users/compu/github/bit10team/node_modules/@vitejs/plugin-react/dist/index.mjs";
 var vite_config_default = defineConfig({
   plugins: [react()],
-  base: "/bit10team/"
+  base: "/"
 });
 export {
   vite_config_default as default
