@@ -26,10 +26,13 @@ function Inicio() {
       </p>
       <h1>Historia</h1>
       <p>
-        <span>Beers CVJS Dev's</span> nace de la unión de 4 estudiantes de
-        programación con el sueño de crear una página ventas funcional para un
-        público joven que esté dispuesto a conocer y desgudtar de una buena
-        cerveza.
+        <span>Beers CVJS Dev's</span> nació de la unión de 4 estudiantes de programación 
+        con el sueño de crear una página de ventas funcional para un público joven que esté 
+        dispuesto a conocer y desear una buena cerveza artesanal ya que tras unas décadas en 
+        las que las cervezas industriales del tipo lager dominaban, en los últimos diez años 
+        han aparecido gran cantidad de pequeñas cervecerías artesanales que han permitido a los 
+        cerveceros probar nuevos estilos ya olvidados y refinar su paladar  mejorando el gusto y 
+        la exigencia de los clientes.
       </p>
     </div>
   );
