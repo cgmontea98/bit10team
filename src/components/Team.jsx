@@ -10,7 +10,7 @@ export const Team = () => {
     <Container className="p-5">
       <Row>
         <Col>
-          <Card style={{ width: "18rem" }}>
+          <Card className='team' style={{ width: "18rem" }}>
             <Card.Img
               className="p-2"
               variant="top"
@@ -25,17 +25,18 @@ export const Team = () => {
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Button
+              <Button className='btn-custom' target="_blank"
                 variant="primary"
                 href="https://www.linkedin.com/in/cgmontea98/"
               >
-                LINKEDIN
+                Portafolio
               </Button>
+
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: "18rem" }}>
+          <Card className='team' style={{ width: "18rem" }}>
             <Card.Img
               className="p-2"
               variant="top"
@@ -48,18 +49,18 @@ export const Team = () => {
               <ListGroup.Item>Suplente.</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Button
+              <Button className='btn-custom' target="_blank"
                 variant="primary"
-                href="https://www.linkedin.com/in/vanessa-robles-silva/"
+                href="https://vaneroblessilva.github.io/bit07me/"
               >
                 {" "}
-                LINKEDIN
+                Portafolio
               </Button>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: "18rem" }}>
+          <Card className='team' style={{ width: "18rem" }}>
             <Card.Img
               className="p-2"
               variant="top"
@@ -73,17 +74,17 @@ export const Team = () => {
               <ListGroup.Item>Encargada de documentación.</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Button
+              <Button className='btn-custom' target="_blank"
                 variant="primary"
-                href="https://www.linkedin.com/in/julianagilcortes/"
+                href="https://julianagil.github.io/bit07me/"
               >
-                LINKEDIN
+                Portafolio
               </Button>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: "18rem" }}>
+          <Card className='team' style={{ width: "18rem" }}>
             <Card.Img
               className="p-2"
               variant="top"
@@ -96,11 +97,11 @@ export const Team = () => {
               <ListGroup.Item>Encargado wireframe de baja.</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Button
+              <Button className='btn-custom' target="_blank"
                 variant="primary"
                 href="https://sergiohernan19.github.io/bit07me/"
               >
-                LINKEDIN
+                Portafolio
               </Button>
             </Card.Body>
           </Card>

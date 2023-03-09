@@ -54,7 +54,7 @@ export const Navbar = () => {
                   aria-current="page"
                   to="/Team"
                 >
-                  Team
+                  Equipo
                 </Link>
               </li>
               <li className="nav-item">
