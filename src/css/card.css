@@ -13,15 +13,53 @@
   border: 2px solid #fff;
 }
 
-
-
-
-
-
 .input--cat:hover{
   height: 2em;
   background-color: #3F0071;
   font-size: xx-large;
   color: #fff;
   text-align: center;
+}
+
+/* Estilos para pantallas pequeñas (máximo 576px de ancho) */
+@media (max-width: 576px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+  }
+}
+/* Estilos para pantallas medianas (entre 576px y 768px de ancho) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+    margin: 10px;
+  }
+  .texto {width: "150px";
+    margin-left: "-1000px";
+    margin: "5000px",
+  }
+}
+/* Estilos para pantallas grandes (más de 768px de ancho) */
+@media (min-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .texto {width: "150px";
+    margin-left: "-1000px";
+    margin: "5000px",
+  }
 }
