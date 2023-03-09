@@ -5,3 +5,13 @@
 .navbar {
   font-family: "Montserrat", sans-serif;
 }
+
+.menu {
+  background-color: #fb2576;
+}
+
+.nav-item:hover {
+
+  background-color: #fb2576;
+  border-radius: 10%;
+}

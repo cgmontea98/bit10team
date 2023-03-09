@@ -17,3 +17,11 @@
 
 
 
+
+.input--cat:hover{
+  height: 2em;
+  background-color: #3F0071;
+  font-size: xx-large;
+  color: #fff;
+  text-align: center;
+}

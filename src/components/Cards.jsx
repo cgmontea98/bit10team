@@ -28,6 +28,7 @@ export const Cards = ({ data }) => {
         <div className="col">
           <InputGroup className="mb-3">
             <FormControl
+            className="input--cat"
               placeholder="Busca tu cerveza favorita"
               aria-label="Buscar producto"
               aria-describedby="basic-addon2"
@@ -92,16 +93,13 @@ export const Cards = ({ data }) => {
             ) : filtro && filtro.length > 0 ? (
               filtro.map((dato) => (
                 <Card
-                  className="card text-bg-light mb-1 m-2 p-2"
-                  style={{ width: "400px" }}
+                  className="card text-bg-light mb-1 m-2"
+                  style={{ width: "350px", textAlign: "center" }}
                   key={dato.id}
                 >
-                  <div
-                    className=""
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
+                  <div style={{ display: "flex", justifyContent: "center" }}>
                     <Card.Img
-                      className="text-center"
+                      className="text-center py-3"
                       variant="top"
                       style={{ width: "100px" }}
                       src={dato.image_url}
