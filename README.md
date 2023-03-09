@@ -107,7 +107,7 @@ El Wireframe de baja se realizo en la página [Canva](https://www.canva.com/desi
 
 Se utilizo la paqueteria [NPM](https://www.npmjs.com/package/gh-pages) para hacer efectivo el despliegue en GitHub con el siguiente link:
 
-https://cgmontea98.github.io/bit10team/
+[label](https://cheery-hummingbird-46fd74.netlify.app/)
 
 ---
 
