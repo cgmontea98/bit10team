@@ -1,0 +1,19 @@
+.custom-tab .nav-link {
+  color: #fb2576;
+}
+.custom-tab .nav-link.active {
+  background-color: #fb2576;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.sotial-network{
+  font-size: 2em;
+  justify-content: space-evenly;
+  display: flex;
+}
+.sotial-network a{
+  text-decoration: none;
+  color: #ffff
+}

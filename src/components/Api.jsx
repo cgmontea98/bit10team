@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Cards } from "./Cards.jsx";
-import { Busqueda } from "./Busqueda.jsx";
 
 export const Api = () => {
   const [data, setData] = useState([]);
@@ -14,11 +13,19 @@ export const Api = () => {
   useEffect(() => {
     getBeers();
   }, []);
-  console.log(data);
   return (
     <div>
+      {/* Marquesin con promo*/}
+      <div className="container-fluid bg-light border-1">
+        <marquee behavior="scroll" dirección="scrollamount" className="promo">
+          <span className="material-symbols-outlined">
+            <i className="fa-solid fa-cart-shopping text-back"></i> Por compras
+            mayores a $100.000 COP el envío es gratis
+            <i className="fa-solid fa-cart-shopping text-back"></i>
+          </span>
+        </marquee>
+      </div>
       <h1>Bebidas</h1>
-      <Busqueda data={data} />
       <Cards data={data} />
     </div>
   );

@@ -1,7 +1,6 @@
 {
   "name": "bit10team",
   "private": true,
-  "homepage": "https://cgmonte.github.io//bit10team",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

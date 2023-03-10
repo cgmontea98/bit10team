@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/navbar.css";
-import { Link } from "react-router-dom";
 import Logo from "../../img/logonavbar.png";
-import { Carrito } from "./Carrito.jsx";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark"
+      <nav fluid
+        className="btn navbar navbar-expand-lg bg-body-tertiary navbar bg-dark p-4 "
         data-bs-theme="dark"
+        
       >
         <div className="container-fluid">
           <a className="navbar-brand text-white" href="#">
-            <img src={Logo} height="50" alt="CVJS" />
+            <img src={Logo} height="80" alt="CVJS" />
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler menu"
+            id=""
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -31,7 +32,7 @@ export const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-white"
+                  className="nav-link active text-white fs-3 mx-3"
                   aria-current="page"
                   to="/"
                 >
@@ -40,25 +41,25 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-white"
+                  className="nav-link active text-white fs-3 mx-3"
                   aria-current="page"
-                  to="/Api"
+                  to="/Catalogo"
                 >
                   Catálogo
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-white"
+                  className="nav-link active text-white fs-3 mx-3"
                   aria-current="page"
                   to="/Team"
                 >
-                  Team
+                  Equipo
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-white"
+                  className="nav-link active text-white fs-3 mx-3"
                   aria-current="page"
                   to="https://punkapi.com/documentation/v2"
                   target="_blank"
@@ -67,14 +68,6 @@ export const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            {/*Carrito de compras*/}
-            <Link>
-              <Carrito
-                className="btn btn-dark fa-solid fa-cart-shopping text-white"
-                type="submit"
-              />
-              <button></button>
-            </Link>
           </div>
         </div>
       </nav>
