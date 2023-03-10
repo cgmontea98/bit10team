@@ -73,10 +73,10 @@ export const Cards = ({ data }) => {
                     <Card.Title style={{ textAlign: "center" }}>
                       {dato.name}
                     </Card.Title>
-                    <Card.Text
+                    <Card.Text className="card-texto"
                       style={{
                         justifyContent: "center",
-                        width: "310px",
+                        width: "100%",
                         marginLeft: "-25px",
                         margin: "5px",
                       }}
@@ -110,9 +110,10 @@ export const Cards = ({ data }) => {
                       {dato.name}
                     </Card.Title>
                     <Card.Text
+                      ClassName="texto"
                       style={{
                         justifyContent: "center",
-                        width: "310px",
+                        width: "100%",
                         marginLeft: "-25px",
                         margin: "5px",
                       }}
