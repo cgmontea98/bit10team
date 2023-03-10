@@ -12,7 +12,10 @@
   border-radius: 10px;
   border: 2px solid #fff;
 }
-
+.btn-custom:hover{
+  background-color: #000;
+  color: #fff;
+}
 .input--cat:hover{
   height: 2em;
   background-color: #3F0071;

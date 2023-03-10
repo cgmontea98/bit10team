@@ -6,7 +6,8 @@ h1 {
   color: #150050;
   padding: 30px;
 }
-
+.btn-custom {
+  background-color: #fb2576;}
 p {
   font-family: "Montserrat", sans-serif;
   padding: 10px;
