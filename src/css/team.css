@@ -1,0 +1,22 @@
+.team {
+  background-color: #f8f9fa;
+}
+/* Estilos para pantallas pequeñas (máximo 576px de ancho) */
+@media (max-width: 320px) {
+  .container-team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+}
+/* Estilos para pantallas medianas (entre 576px y 768px de ancho)*/
+@media (min-width: 330px) and (max-width: 768px) {
+  .container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+}
