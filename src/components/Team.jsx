@@ -105,7 +105,7 @@ export const Team = () => {
             <Card.Img
               className="p-2"
               variant="top"
-              src="./img/foto.sergio.png"
+              src="https://sergiohernan19.github.io/bit07me/img/me.jpg"
             />
             <Card.Body>
               <Card.Title>Sergio Hernandez</Card.Title>
