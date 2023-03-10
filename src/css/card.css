@@ -54,9 +54,9 @@
 /* Estilos para pantallas grandes (más de 768px de ancho) */
 @media (min-width: 768px) {
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .card {
     width: 100%;
