@@ -7,3 +7,13 @@
   border-radius: 10px;
   border: 2px solid #fff;
 }
+
+.sotial-network{
+  font-size: 2em;
+  justify-content: space-evenly;
+  display: flex;
+}
+.sotial-network a{
+  text-decoration: none;
+  color: #ffff
+}

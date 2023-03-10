@@ -58,81 +58,20 @@ export const Pie = () => {
             </Table>
           </Tab>
           <Tab eventKey="contact" title="Redes" className="text-center p-5">
-            <DropdownButton
-              as={ButtonGroup}
-              title={<FaLinkedinIn />}
-              id="bg-vertical-dropdown-1"
-              className="p-2"
-              variant="dark"
-            >
-              <Dropdown.Item eventKey="1">
-                <a
-                  href="https://www.linkedin.com/in/cgmontea98/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Cristian Montealegre
-                </a>
-              </Dropdown.Item>
-              <Dropdown.Item eventKey="2">
-                <a
-                  href="https://www.linkedin.com/in/vanessa-robles-silva/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Vanessa Robles
-                </a>
-              </Dropdown.Item>
-              <Dropdown.Item eventKey="3">
-                <a
-                  href="https://www.linkedin.com/in/julianagilcortes/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Juliana Gil
-                </a>
-              </Dropdown.Item>
-              <Dropdown.Item eventKey="4">
-                <a
-                  href="https://www.linkedin.com/in/sergiohernandezbarrios19/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sergio Hernandez
-                </a>
-              </Dropdown.Item>
-            </DropdownButton>
-          </Tab>
-          <Tab
-            eventKey="longer-tab"
-            title="Comentarios"
-            className="bg-dark p-2"
-          >
-            <Form className="bg-dark text-white">
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlInput1"
+            <div class="sotial-network">
+              <a href="https://www.instagram.com/beercvjsdev/" target="_blank">
+                <i class="fa-brands fa-instagram text-white"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100090785389104"
+                target="_blank"
               >
-                <h3>Datos básicos</h3>
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control type="text" placeholder="Juan Jaramillo" />
-                <Form.Label>Correo electrónico</Form.Label>
-                <Form.Control type="email" placeholder="name@example.com" />
-                <Form.Label>Número de contacto</Form.Label>
-                <Form.Control type="text" placeholder="ej: +573116302978" />
-              </Form.Group>
-              <h3>Comentarios</h3>
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
-              ></Form.Group>
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
-              >
-                <Form.Control as="textarea" rows={3} />
-              </Form.Group>
-            </Form>
+                <i class="fa-brands fa-facebook text-white"></i>
+              </a>
+              <a href="https://twitter.com/CvjsDev" target="_blank">
+                <i class="fa-brands fa-twitter text-white"></i>
+              </a>
+            </div>
           </Tab>
         </Tabs>
       </Container>

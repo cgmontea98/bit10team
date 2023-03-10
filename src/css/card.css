@@ -12,7 +12,10 @@
   border-radius: 10px;
   border: 2px solid #fff;
 }
-
+.btn-custom:hover{
+  background-color: #000;
+  color: #fff;
+}
 .input--cat:hover{
   height: 2em;
   background-color: #3F0071;
@@ -51,9 +54,9 @@
 /* Estilos para pantallas grandes (más de 768px de ancho) */
 @media (min-width: 768px) {
   .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .card {
     width: 100%;
