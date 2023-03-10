@@ -40,7 +40,7 @@ export const Cards = ({ data }) => {
       </div>
       <div className="row">
         <div className="col">
-          <Button variant="dark" onClick={() => setShowCart(true)}>
+          <Button variant="outline-dark" className="btn-custom py-3" onClick={() => setShowCart(true)}>
             <i className="fa-solid fa-cart-shopping text-white"></i> (
             {carrito.length})
           </Button>

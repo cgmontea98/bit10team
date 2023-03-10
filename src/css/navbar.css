@@ -9,6 +9,9 @@
 .menu {
   background-color: #fb2576;
 }
+.confirmar{
+  background-color: grey;
+}
 
 .nav-item:hover {
   background-color: #fb2576;
