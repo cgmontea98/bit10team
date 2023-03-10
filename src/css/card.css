@@ -20,10 +20,7 @@
   color: #fff;
   text-align: center;
 }
-.team{
-  background-color:
-  #F8F9FA ;
-}
+
 /* Estilos para pantallas pequeñas (máximo 576px de ancho) */
 @media (max-width: 576px) {
   .card-container {
